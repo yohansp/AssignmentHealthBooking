@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="Open GPX Tracker for iOS">
+  <wpt lon="106.824584" lat="-6.1754083"> 
+    <time>2024-03-14T14:19:25Z</time>
+    <name>Jakarta</name>
+    <desc>Description of point 1</desc>
+  </wpt>
+ 
+</gpx>
