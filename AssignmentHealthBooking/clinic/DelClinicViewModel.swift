@@ -44,15 +44,16 @@ class DelClinicViewModel {
         }
     }
     
-    func requestBookList(_ codeClinic: String, codeDoctor: String) {
+    func requestBookList(_ codeClinic: String, codeDoctor: String, datetime: String) {
         Task {
-            if let snapshot = await clinicRepo.requestBooking(codeClinic, codeDoctor: codeDoctor) {
+            if let snapshot = await clinicRepo.requestBooking(codeClinic, codeDoctor: codeDoctor, datetime: datetime) {
                 var result: [BookedModel] = []
                 for d in snapshot.documents {
                     let data = d.data()
                     let booked = BookedModel(codeUser: data["code_user"] as! String,
                                              codeDoctor: data["code_doctor"] as! String,
                                              codeClinic: data["code_clinic"] as! String,
+                                             datetime: data["datetime"] as! String,
                                              startTime: data["start_time"] as! Int,
                                              endTime: data["end_time"] as! Int)
                     result.append(booked)

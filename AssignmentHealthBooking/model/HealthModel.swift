@@ -25,6 +25,7 @@ struct BookedModel {
     let codeUser: String
     let codeDoctor: String
     let codeClinic: String
+    let datetime: String
     let startTime: Int
     let endTime: Int
 }

@@ -27,7 +27,7 @@
 		158E06BA2BA269900015845F /* ClinicMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06B92BA269900015845F /* ClinicMarker.swift */; };
 		158E06BC2BA2920E0015845F /* ClinicRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06BB2BA2920E0015845F /* ClinicRepository.swift */; };
 		158E06BE2BA2933F0015845F /* DelHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06BD2BA2933F0015845F /* DelHomeViewModel.swift */; };
-		158E06C12BA295500015845F /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06C02BA295500015845F /* HomeModel.swift */; };
+		158E06C12BA295500015845F /* HealthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06C02BA295500015845F /* HealthModel.swift */; };
 		158E06C32BA29D0C0015845F /* AdminRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06C22BA29D0C0015845F /* AdminRepository.swift */; };
 		158E06C52BA2B6320015845F /* CompZoomOutIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06C42BA2B6320015845F /* CompZoomOutIn.swift */; };
 		158E06C82BA2C9FF0015845F /* DelClinicDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06C72BA2C9FF0015845F /* DelClinicDetailController.swift */; };
@@ -36,6 +36,7 @@
 		158E06CF2BA308D90015845F /* DlgBookTimeChooser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06CE2BA308D90015845F /* DlgBookTimeChooser.swift */; };
 		158E06D12BA309FA0015845F /* TimeChooserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06D02BA309FA0015845F /* TimeChooserCell.swift */; };
 		158E06D32BA31EDD0015845F /* Int+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06D22BA31EDD0015845F /* Int+Extenstion.swift */; };
+		158E06D52BA3435D0015845F /* Date+Extenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E06D42BA3435D0015845F /* Date+Extenstion.swift */; };
 		6F5554FF779C16A1C9F6A4DF /* Pods_AssignmentHealthBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06E463620A4AE4C75F71C28F /* Pods_AssignmentHealthBooking.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +65,7 @@
 		158E06B92BA269900015845F /* ClinicMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicMarker.swift; sourceTree = "<group>"; };
 		158E06BB2BA2920E0015845F /* ClinicRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClinicRepository.swift; sourceTree = "<group>"; };
 		158E06BD2BA2933F0015845F /* DelHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelHomeViewModel.swift; sourceTree = "<group>"; };
-		158E06C02BA295500015845F /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		158E06C02BA295500015845F /* HealthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthModel.swift; sourceTree = "<group>"; };
 		158E06C22BA29D0C0015845F /* AdminRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminRepository.swift; sourceTree = "<group>"; };
 		158E06C42BA2B6320015845F /* CompZoomOutIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompZoomOutIn.swift; sourceTree = "<group>"; };
 		158E06C72BA2C9FF0015845F /* DelClinicDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelClinicDetailController.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		158E06CE2BA308D90015845F /* DlgBookTimeChooser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DlgBookTimeChooser.swift; sourceTree = "<group>"; };
 		158E06D02BA309FA0015845F /* TimeChooserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChooserCell.swift; sourceTree = "<group>"; };
 		158E06D22BA31EDD0015845F /* Int+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extenstion.swift"; sourceTree = "<group>"; };
+		158E06D42BA3435D0015845F /* Date+Extenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extenstion.swift"; sourceTree = "<group>"; };
 		AA463D07B58A73EC8EDB9E7F /* Pods-AssignmentHealthBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssignmentHealthBooking.debug.xcconfig"; path = "Target Support Files/Pods-AssignmentHealthBooking/Pods-AssignmentHealthBooking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 		15303E8C2BA162EC008D17D7 /* AssignmentHealthBooking */ = {
 			isa = PBXGroup;
 			children = (
+				158E06BF2BA295410015845F /* model */,
 				158E06982BA172C80015845F /* utils */,
 				158E06912BA16A9A0015845F /* component */,
 				158E06AB2BA1DC5D0015845F /* repository */,
@@ -153,6 +156,7 @@
 				158E06992BA172E40015845F /* UIView+TapListener.swift */,
 				158E069B2BA173080015845F /* UIColor+Extension.swift */,
 				158E06D22BA31EDD0015845F /* Int+Extenstion.swift */,
+				158E06D42BA3435D0015845F /* Date+Extenstion.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -186,7 +190,6 @@
 		158E06B52BA254BB0015845F /* home */ = {
 			isa = PBXGroup;
 			children = (
-				158E06BF2BA295410015845F /* model */,
 				158E06B82BA269850015845F /* component */,
 				158E06B62BA254D20015845F /* DelHomeController.swift */,
 				158E06BD2BA2933F0015845F /* DelHomeViewModel.swift */,
@@ -206,7 +209,7 @@
 		158E06BF2BA295410015845F /* model */ = {
 			isa = PBXGroup;
 			children = (
-				158E06C02BA295500015845F /* HomeModel.swift */,
+				158E06C02BA295500015845F /* HealthModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -366,11 +369,12 @@
 				158E06AD2BA1DC7F0015845F /* UserRepository.swift in Sources */,
 				158E06D32BA31EDD0015845F /* Int+Extenstion.swift in Sources */,
 				158E06BA2BA269900015845F /* ClinicMarker.swift in Sources */,
-				158E06C12BA295500015845F /* HomeModel.swift in Sources */,
+				158E06C12BA295500015845F /* HealthModel.swift in Sources */,
 				158E069A2BA172E40015845F /* UIView+TapListener.swift in Sources */,
 				158E06BC2BA2920E0015845F /* ClinicRepository.swift in Sources */,
 				158E06A52BA183F90015845F /* DelLoginController.swift in Sources */,
 				158E06C32BA29D0C0015845F /* AdminRepository.swift in Sources */,
+				158E06D52BA3435D0015845F /* Date+Extenstion.swift in Sources */,
 				158E06D12BA309FA0015845F /* TimeChooserCell.swift in Sources */,
 				158E06CF2BA308D90015845F /* DlgBookTimeChooser.swift in Sources */,
 				158E06BE2BA2933F0015845F /* DelHomeViewModel.swift in Sources */,

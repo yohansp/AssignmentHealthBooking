@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../../../playground/XCodeGpsExchange/Singapore.gpx">
+      location = "group:IndonesiaJakarta.gpx">
    </FileRef>
    <FileRef
-      location = "group:../../../../playground/XCodeGpsExchange/IndonesiaJakarta.gpx">
+      location = "group:Singapore.gpx">
    </FileRef>
    <FileRef
       location = "group:AssignmentHealthBooking.xcodeproj">

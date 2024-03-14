@@ -32,10 +32,7 @@ class DelRegisterController: DelViewController {
         return btn
     }()
     
-    private lazy var viewModel: DelAuthVIewModel = {
-        let vm = DelAuthVIewModel()
-        return vm
-    }()
+    private lazy var viewModel: DelAuthVIewModel = DelAuthVIewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

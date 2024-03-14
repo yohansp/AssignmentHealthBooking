@@ -47,11 +47,7 @@ class DelLoginController: DelViewController {
     }()
     
     var isExpand: Bool = false
-    
-    private lazy var viewModel: DelAuthVIewModel = {
-        let vm = DelAuthVIewModel()
-        return vm
-    }()
+    private lazy var viewModel: DelAuthVIewModel = DelAuthVIewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -17,11 +17,9 @@ class DlgBookTimeChooser: DelViewController, UICollectionViewDataSource, UIColle
     class DataTime {
         var startTime: Int = 0
         var endTime: Int = 0
-        var status: String = ""
-        init(startTime: Int, endTime: Int, status: String) {
+        init(startTime: Int, endTime: Int) {
             self.startTime = startTime
             self.endTime = endTime
-            self.status = status
         }
     }
     
@@ -43,12 +41,22 @@ class DlgBookTimeChooser: DelViewController, UICollectionViewDataSource, UIColle
         return btn
     }()
     
+    private lazy var datePicker: UIDatePicker = {
+        let datepicker = UIDatePicker()
+        datepicker.datePickerMode = .date
+        return datepicker
+    }()
+    
+    private lazy var viewModel: DelClinicViewModel = DelClinicViewModel()
+    var currentClinicCode: String = ""
+    var currentDoctorCode: String = ""
     var listBooked: [BookedModel] = []
     var listEntry: [DataTime] = []
-    var delegate: ((Int,Int) -> Void)? = nil
+    var delegate: ((String, Int, Int) -> Void)? = nil
     var selectedStartTime: Int = 0
     var selectedEndTime: Int = 0
     var selectedIndex: Int = -1
+    var selectedDatetime: String = Date.getCurrentDatetime()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,23 +78,32 @@ class DlgBookTimeChooser: DelViewController, UICollectionViewDataSource, UIColle
         btnSave.snp.makeConstraints { make in
             make.height.equalTo(40)
         }
+        let line = UIView()
+        line.backgroundColor = UIColor.black.withAlphaComponent(0.2)
+        view.addSubview(line)
+        line.snp.makeConstraints { make in
+            make.leading.trailing.equalToSuperview()
+            make.top.equalTo(stackViewBtn.snp.bottom).offset(9)
+            make.height.equalTo(1)
+        }
+        
+        datePicker.addTarget(self, action: #selector(onDateChange(sender:)), for: .valueChanged)
+        view.addSubview(datePicker)
+        datePicker.snp.makeConstraints { make in
+            make.top.equalTo(line.snp.bottom).offset(15)
+            make.centerX.equalToSuperview()
+        }
         
         collectionView.delegate = self
         collectionView.dataSource = self
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints { make in
-            make.top.equalTo(stackViewBtn.snp.bottom).offset(24)
+            make.top.equalTo(datePicker.snp.bottom).offset(24)
             make.leading.trailing.equalToSuperview().inset(24)
             make.bottom.equalToSuperview()
         }
         
-        var time = Property.hourStartBook
-        while time <= Property.hourEndBook {
-            if isInRange(time) {
-                listEntry.append(DataTime(startTime: time, endTime: time+100, status: "available"))
-            }
-            time += 100
-        }
+        reloadListEntry()
         
         // listener
         btnCancel.addTapGestureListener(action: {
@@ -94,9 +111,34 @@ class DlgBookTimeChooser: DelViewController, UICollectionViewDataSource, UIColle
         })
         
         btnSave.addTapGestureListener(action: {
-            self.delegate?(self.selectedStartTime, self.selectedEndTime)
+            self.delegate?(self.selectedDatetime,
+                           self.selectedStartTime, self.selectedEndTime)
             self.dismiss(animated: true)
         })
+        
+        // observer
+        viewModel.liveBook.subscribe(onNext: { data in
+            DispatchQueue.main.async {
+                self.hideWait()
+                self.listBooked = data
+                self.selectedIndex = -1
+                self.selectedStartTime = 0
+                self.selectedEndTime = 0
+                self.reloadListEntry()
+                self.collectionView.reloadData()
+            }
+        }).disposed(by: self.disposeBag)
+    }
+    
+    private func reloadListEntry() {
+        listEntry = []
+        var time = Property.hourStartBook
+        while time <= Property.hourEndBook {
+            if isInRange(time) {
+                listEntry.append(DataTime(startTime: time, endTime: time+100))
+            }
+            time += 100
+        }
     }
     
     private func isInRange(_ time: Int) -> Bool {
@@ -148,5 +190,17 @@ class DlgBookTimeChooser: DelViewController, UICollectionViewDataSource, UIColle
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    @objc func onDateChange(sender: UIDatePicker) {
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd"
+        self.selectedDatetime = format.string(from: sender.date)
+        self.dismiss(animated: true)
+        
+        // request for change date
+        self.showWait()
+        self.viewModel.requestBookList(self.currentClinicCode, codeDoctor: self.currentDoctorCode,
+                                       datetime: self.selectedDatetime)
     }
 }

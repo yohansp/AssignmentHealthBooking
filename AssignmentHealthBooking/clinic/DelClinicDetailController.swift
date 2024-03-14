@@ -66,7 +66,6 @@ class DelClinicDetailController: DelViewController {
         labelClinicName.setText(self.clinicModel!.name)
         labelClinicAddress.setText(self.clinicModel!.address)
         
-        
         tableView.delegate = self
         tableView.dataSource = self
         view.addSubview(tableView)
@@ -91,17 +90,18 @@ class DelClinicDetailController: DelViewController {
                 let view = DlgBookTimeChooser()
                 view.modalPresentationStyle = .popover
                 view.modalTransitionStyle = .crossDissolve
+                view.currentClinicCode = self.clinicModel!.code
+                view.currentDoctorCode = self.selectedDoctor!.code
                 view.listBooked = data
-                view.delegate = { (start,end) in
-                    print(start)
-                    print(end)
-                    
+                view.delegate = { (datetime, start, end) in
                     if let doctor = self.selectedDoctor {
                         self.showWait()
                         self.viewModel.saveBook(BookedModel(codeUser: UserDefaults.standard.string(forKey: "uid") ?? "-1",
                                                             codeDoctor: doctor.code,
                                                             codeClinic: self.clinicModel!.code,
-                                                            startTime: start, endTime: end))
+                                                            datetime: datetime,
+                                                            startTime: start,
+                                                            endTime: end))
                     }
                     
                 }
@@ -151,7 +151,9 @@ extension DelClinicDetailController: UITableViewDataSource, UITableViewDelegate 
         cell.btnBook.addTapGestureListener(action: {
             self.showWait()
             self.selectedDoctor = data
-            self.viewModel.requestBookList(self.clinicModel!.code, codeDoctor: data.code)
+            self.viewModel.requestBookList(self.clinicModel!.code, 
+                                           codeDoctor: data.code,
+                                           datetime: Date.getCurrentDatetime())
         })
         return cell
     }

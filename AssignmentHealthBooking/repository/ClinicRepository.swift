@@ -53,10 +53,13 @@ class ClinicRepository {
         }
     }
     
-    func requestBooking(_ codeClinic: String, codeDoctor: String) async -> QuerySnapshot? {
+    func requestBooking(_ codeClinic: String, codeDoctor: String, datetime: String) async -> QuerySnapshot? {
         do {
             let book = db.collection(Property.documentBooking)
-            let response = try await book.whereField("code_clinic", isEqualTo: codeClinic).whereField("code_doctor", isEqualTo: codeDoctor).getDocuments()
+            let response = try await book.whereField("code_clinic", isEqualTo: codeClinic)
+                .whereField("code_doctor", isEqualTo: codeDoctor)
+                .whereField("datetime", isEqualTo: datetime)
+                .getDocuments()
             return response
         } catch {
             return nil
@@ -71,7 +74,8 @@ class ClinicRepository {
                 "code_clinic": data.codeClinic,
                 "code_doctor": data.codeDoctor,
                 "start_time": data.startTime,
-                "end_time": data.endTime
+                "end_time": data.endTime,
+                "datetime": data.datetime
             ])
         } catch {
         }

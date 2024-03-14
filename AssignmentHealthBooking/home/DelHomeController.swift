@@ -23,11 +23,8 @@ class DelHomeController: DelViewController, CompZoomDelegate {
         return loc
     }()
     
-    private lazy var viewModel: DelHomeViewModel = {
-        let vm = DelHomeViewModel()
-        return vm
-    }()
-    
+    private lazy var viewModel: DelHomeViewModel = DelHomeViewModel()
+        
     private lazy var compZoomButton: CompZoomOutIn = {
         let comp = CompZoomOutIn()
         comp.delegate = self
