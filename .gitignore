@@ -1,0 +1,23 @@
+xcschememanagement.plist
+astrapay.xcworkspace/xcuserdata/
+/.idea
+build/
+DerivedData/
+
+## macfiles
+.DS_Store
+*.DS_Store
+**.DS_Store
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# cocoapods
+Pods
+Pods/
+
+#build stuff ?
+testOutput/
+test_output/

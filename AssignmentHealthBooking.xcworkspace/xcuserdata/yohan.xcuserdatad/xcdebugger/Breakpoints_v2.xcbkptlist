@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7CE68255-A742-4692-8BDB-3A92E2017D61"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F5BE3E28-AD04-419B-A342-E998DC26853B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/component/DelTextInput.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "textFieldDidEndEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B330E33-8CCD-4F7E-A58D-85886C63FB84"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/auth/DelRegisterController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AB8171EF-65A1-4939-B5DC-F07E45387564"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/auth/DelRegisterController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AB8171EF-65A1-4939-B5DC-F07E45387564 - 9ae63d7f9b86db30"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #4 (Swift.String) -&gt; () in AssignmentHealthBooking.DelRegisterController.viewDidLoad() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/auth/DelRegisterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "69"
+                  endingLineNumber = "69"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "AB8171EF-65A1-4939-B5DC-F07E45387564 - 9ae63d7f9b86dbf2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #4 (Swift.String) -&gt; () in AssignmentHealthBooking.DelRegisterController.viewDidLoad() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/auth/DelRegisterController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5B26AABA-35DB-4DE3-AC0A-E3661CE6D8FC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/auth/DelAuthVIewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "login(_:password:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "903C91CE-EA89-49A8-BB14-F5A21EB85E01"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/home/component/CompZoomOutIn.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "setup()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85E2A8A3-1272-42BE-956A-572EAF2E0096"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/home/component/CompZoomOutIn.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "setup()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7312DFC0-3BF8-4109-8505-871BDE271E9F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/home/DelHomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "onPlus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7312DFC0-3BF8-4109-8505-871BDE271E9F - e04b7f6e133f35a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "7312DFC0-3BF8-4109-8505-871BDE271E9F - e04b7f6e133f35e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "7312DFC0-3BF8-4109-8505-871BDE271E9F - e04b7f6e133f35a2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/home/DelHomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
+            landmarkName = "onPlus()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9 - e04b7f6e133f3583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9 - e04b7f6e133f3583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9 - e04b7f6e133f35c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9 - e04b7f6e133f35c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9 - e04b7f6e133f3583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "856B8DEF-307E-483E-8E78-712AB09B28B9 - e04b7f6e133f3583"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onPlus() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "164">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62E3988C-2BBD-4EA3-9D2B-581A0BD74CD4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/home/DelHomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "onMin()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "62E3988C-2BBD-4EA3-9D2B-581A0BD74CD4 - 244a48b0d422531c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onMin() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "62E3988C-2BBD-4EA3-9D2B-581A0BD74CD4 - 244a48b0d42253d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AssignmentHealthBooking.DelHomeController.onMin() -&gt; ()"
+                  moduleName = "AssignmentHealthBooking"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yohan/Developments/rnd/mobile/ios/AssignmentHealthBooking/AssignmentHealthBooking/home/DelHomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0CD0DC7E-1A64-4EEB-9499-29C62BAC73ED"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AssignmentHealthBooking/clinic/component/DlgBookTimeChooser.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
