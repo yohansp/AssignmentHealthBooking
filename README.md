@@ -1,4 +1,4 @@
-## Prepartion
+## Preparation
 ### 1. Execute pod install inside project folder
 ```
 pod install
